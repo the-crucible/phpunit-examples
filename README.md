@@ -12,3 +12,7 @@ Instructions to use it
 2. Give executable permission to phpunit eg $ chmod aug+x ./bin/phpunit
 3. Run the test by $ ./bin/phpunit --color <test name>
 4. For example $ ./bin/phpunit --color 01StackTest.php
+
+Also do fork the project and improve it in any way you want. 
+
+If you see any mistake please file the issue here https://github.com/the-crucible/phpunit-examples/issues
