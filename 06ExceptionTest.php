@@ -7,11 +7,18 @@
 class ExceptionTest extends PHPUnit_Framework_TestCase
 {
     /**
+     * If a test is written to test Exception then that exception
+     * should be mentioned in the comment tag of that function.
+     * 
      * @expectedException InvalidArgumentException
      */
     public function testException()
     {
-        throw new InvalidArgumentException();
+        $exception = new RuntimeException();
+        //$exception = new InvalidArgumentException(); 
+        //Uncommenting above line will pass the test
+        
+        throw $exception;
     }
 }
 

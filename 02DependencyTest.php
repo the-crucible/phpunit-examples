@@ -5,12 +5,16 @@
  * 
  * If any of the function failed to give the return value, if it get failed
  * all the tests below will be skipped.
+ * 
+ * This test is anyway going to be passed but the failure example is covered
+ * in 03DependencyFailureTest.php 
  */
 
 class DependencyTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * This is a simple test but it returns a value also
+     * This is a simple test but it returns a value also.
+     * Multiple functions could be dependent on this function.
      * 
      * @return array 
      */
