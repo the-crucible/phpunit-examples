@@ -16,6 +16,3 @@ Instructions to use it
 Also do fork the project and improve it in any way you want. 
 
 If you see any mistake please file the issue here https://github.com/the-crucible/phpunit-examples/issues
-
-Added by Alok
-Added one more line
