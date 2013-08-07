@@ -10,7 +10,9 @@
  * 
  * assertXmlStringNotEqualsXmlString() is the inverse of this assertion 
  * and takes the same arguments. 
+ * 
  */
+
 class XmlStringEqualsXmlStringTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()

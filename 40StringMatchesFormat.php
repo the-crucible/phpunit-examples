@@ -1,7 +1,13 @@
 <?php
 /**
- * assertStringMatchesFormat(string $format, string $string[, string $message = ''])
+ * assertStringMatchesFormat(
+ *      string $format, 
+ *      string $string[, 
+ *      string $message = '']
+ * )
+ * 
  * Reports an error identified by $message if the $string does not match the $format string.
+ * 
  * assertStringNotMatchesFormat() is the inverse of this assertion and takes the same arguments. 
  */
 class StringMatchesFormatTest extends PHPUnit_Framework_TestCase

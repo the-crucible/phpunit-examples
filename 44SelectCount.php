@@ -15,9 +15,9 @@
 /**
  * $count can be one of the following types:
  *
- *   boolean: Asserts for presence of elements matching the selector (TRUE) or absence of elements (FALSE).
- *   integer: Asserts the count of elements.
- *   array: Asserts that the count is in a range specified by using <, >, <=, and >= as keys.
+ *   1. boolean: Asserts for presence of elements matching the selector (TRUE) or absence of elements (FALSE).
+ *   2. integer: Asserts the count of elements.
+ *   3. array: Asserts that the count is in a range specified by using <, >, <=, and >= as keys.
  *
  */
 class SelectCountTest extends PHPUnit_Framework_TestCase

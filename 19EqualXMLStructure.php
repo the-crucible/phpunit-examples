@@ -2,7 +2,8 @@
 /**
  * assertEqualXMLStructure(
  *      DOMElement $expectedElement, 
- *      DOMElement $actualElement[, boolean $checkAttributes = FALSE, 
+ *      DOMElement $actualElement[, 
+ *      boolean $checkAttributes = FALSE, 
  *      string $message = '']
  * )
  * 
@@ -13,14 +14,26 @@
 
 class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
 {
+    /**
+     * This function is pretty straight forward and it checks the 
+     * two simplest xml structures.
+     */
     public function testFailureWithDifferentNodeNames()
     {
         $expected = new DOMElement('foo');
+        
         $actual = new DOMElement('bar');
- 
+        #$actual = new DOMElement('bar');
+        #Uncommenting above line will pass this test
+        
         $this->assertEqualXMLStructure($expected, $actual);
     }
  
+    /**
+     * This function is to test same element but with different 
+     * attributes. Third parameter in the function assertEqualXMLStructure
+     * is just used to test that.
+     */
     public function testFailureWithDifferentNodeAttributes()
     {
         $expected = new DOMDocument;
@@ -34,6 +47,10 @@ class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
         );
     }
  
+    /**
+     * This function is to test the same node in the xml
+     * but with different count of child nodes.
+     */
     public function testFailureWithDifferentChildrenCount()
     {
         $expected = new DOMDocument;
@@ -47,6 +64,10 @@ class EqualXMLStructureTest extends PHPUnit_Framework_TestCase
         );
     }
  
+    /**
+     * This function is used to test the same xml node 
+     * but different child nodes
+     */
     public function testFailureWithDifferentChildren()
     {
         $expected = new DOMDocument;

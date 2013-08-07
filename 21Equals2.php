@@ -10,7 +10,7 @@
  * to understand why $delta is neccessary. 
  * 
  */
-class EqualsTest extends PHPUnit_Framework_TestCase
+class FloatEqualsTest extends PHPUnit_Framework_TestCase
 {
     public function testSuccess()
     {

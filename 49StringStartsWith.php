@@ -1,6 +1,11 @@
 <?php
 /**
- * assertStringStartsWith(string $prefix, string $string[, string $message = ''])
+ * assertStringStartsWith(
+ *      string $prefix, 
+ *      string $string[, 
+ *      string $message = '']
+ * )
+ * 
  * Reports an error identified by $message if the $string does not start with $prefix.
  * 
  * assertStringStartsNotWith() is the inverse of this assertion and takes the same arguments. 

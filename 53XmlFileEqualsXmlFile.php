@@ -10,12 +10,15 @@
  * assertXmlFileNotEqualsXmlFile() is the inverse of this assertion 
  * and takes the same arguments. 
  */
+define('DS', DIRECTORY_SEPARATOR);
+define('D_DIR' , dirname(__FILE__) . DS . 'data' . DS);
+
 class XmlFileEqualsXmlFileTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {
         $this->assertXmlFileEqualsXmlFile(
-          '/home/sb/expected.xml', '/home/sb/actual.xml');
+          D_DIR . 'file1.xml', D_DIR . 'file2.xml');
     }
 }
 ?>

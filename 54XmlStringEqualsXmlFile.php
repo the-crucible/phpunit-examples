@@ -11,12 +11,15 @@
  * and takes the same arguments. 
  */
 
+define('DS', DIRECTORY_SEPARATOR);
+define('D_DIR' , dirname(__FILE__) . DS . 'data' . DS);
+
 class XmlStringEqualsXmlFileTest extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {
         $this->assertXmlStringEqualsXmlFile(
-          '/home/sb/expected.xml', '<foo><baz/></foo>');
+          D_DIR . 'file1.xml', '<foo><baz/></foo>');
     }
 }
 ?>
