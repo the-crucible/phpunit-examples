@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="test_pdo">
+	<table_data name="address">
+	</table_data>
+	<table_data name="class">
+	<row>
+		<field name="id">1</field>
+		<field name="uid">1</field>
+		<field name="age">5</field>
+		<field name="class">1</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="uid">2</field>
+		<field name="age">13</field>
+		<field name="class">6</field>
+	</row>
+	</table_data>
+	<table_data name="user">
+	<row>
+		<field name="id">1</field>
+		<field name="name">one</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">two kumar</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

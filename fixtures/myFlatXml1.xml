@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <!-- User content -->
+    <user id="3" name="one"/>
+    <user id="4" name="two"/>
+</dataset>

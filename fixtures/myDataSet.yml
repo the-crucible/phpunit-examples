@@ -1,0 +1,25 @@
+## YAML Template.
+---
+address:
+
+user:
+  -
+    id: 1
+    name: "one"
+  -
+    id: 2
+    name: "two"
+    
+class:
+  -
+    id: 1
+    uid: 1
+    class: 1
+    age: 5
+  -
+    id: 2
+    uid: 2
+    class: 6
+    age: 13
+    
+  

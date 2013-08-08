@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="user">
+        <column>id</column><column>name</column>
+        <row><value>1</value><value>one</value></row>
+        <row><value>2</value><value>two kumar</value></row>
+    </table>
+    <table name="class">
+        <column>id</column>
+        <column>uid</column>
+        <column>class</column>
+        <column>age</column>
+        <row>
+            <value>1</value>
+            <value>1</value>
+            <value>1</value>
+            <value>5</value>
+        </row>
+        <row>
+            <value>2</value>
+            <value>2</value>
+            <value>6</value>
+            <value>13</value>
+        </row>
+    </table>
+    <table name="address">
+        <column>id</column>
+        <column>uid</column>
+        <column>street1</column>
+        <column>street2</column>
+        <column>city</column>
+        <column>state</column>
+        <column>pin</column>
+    </table>
+</dataset>

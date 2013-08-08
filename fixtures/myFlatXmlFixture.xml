@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <!-- User content -->
+    <user id="1" name="one"/>
+    <user id="2" name="two"/>
+    
+    <!-- Respective class content -->
+    <class id="1" uid="1" class="1" age="5"/>
+    <class id="2" uid="2" class="6" age="13"/>
+    
+    <!-- No data in address table -->
+    <address/>
+</dataset>
