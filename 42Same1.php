@@ -12,7 +12,7 @@
  * as the actual value. 
  */
 
-class SameTest extends PHPUnit_Framework_TestCase
+class Same1Test extends PHPUnit_Framework_TestCase
 {
     public function testFailure()
     {

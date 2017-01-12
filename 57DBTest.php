@@ -15,10 +15,13 @@ class DBSimpleTest extends PHPUnit_Extensions_Database_TestCase {
     public static $pdo = null;
     private $conn = null;
 
+    /**
+     * @return PHPUnit_Extensions_Database_DB_IDatabaseConnection
+     */
     public function getConnection() {
         if ($this->conn == null) {
             if (self::$pdo == null) {
-                self::$pdo = new PDO("mysql:host=localhost;dbname=test_pdo", 'root', "password");
+                self::$pdo = new PDO("mysql:host=localhost;dbname=test_pdo", 'user', "pass");
             }
             $this->conn = $this->createDefaultDBConnection(self::$pdo, 'test_pdo');
         }

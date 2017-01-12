@@ -36,7 +36,7 @@ class CSVDataProvidorTest extends PHPUnit_Framework_TestCase
      */
     public function provider()
     {
-        return new CsvFileIterator(dirname(__FILE__) . DS . data . DS . 'data.csv');
+        return new CsvFileIterator(dirname(__FILE__) . DS . "data" . DS . 'data.csv');
     }
 }
 ?>
