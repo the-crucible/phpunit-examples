@@ -21,7 +21,13 @@ class OutputTest extends PHPUnit_Framework_TestCase
         
         print $actual_echo_str;
     }
+
+    public function testSkipped()
+    {
+       $this->markTestSkipped('must be revisited.');
+    }
  }
+
 
 /**
  * Similar functions which test the output buffer but 

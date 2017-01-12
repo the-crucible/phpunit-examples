@@ -22,10 +22,16 @@ class ContainsOnlyInstancesOfTest extends PHPUnit_Framework_TestCase
     }
 }
 
-class Foo{
+if (!class_exists('Foo', FALSE)) {
+	class Foo{
     
+	}
 }
-class Bar{
+
+if (!class_exists('Bar', FALSE)) {
+	class Bar{
     
+	}
 }
+
 ?>
